@@ -1,0 +1,88 @@
+{
+  "apartments": [
+    {
+      "id": "1",
+      "title": "Mieszkanie 1",
+      "flatArea": "100",
+      "roomsNumber": "4",
+      "floor": "I",
+      "status": "Wolny",
+      "floorPlan": "",
+      "rooms": [
+        {
+          "name": "korytarz",
+          "area": "10"
+        },
+        {
+          "name": "kuchnia",
+          "area": "30"
+        },
+        {
+          "name": "salon",
+          "area": "40"
+        },
+        {
+          "name": "łazienka",
+          "area": "20"
+        }
+      ],
+      "photos": ["", "", ""]
+    },
+    {
+      "id": "2",
+      "title": "Mieszkanie 2",
+      "flatArea": "200",
+      "roomsNumber": "4",
+      "floor": "I",
+      "status": "Wolny",
+      "floorPlan": "",
+      "rooms": [
+        {
+          "name": "korytarz",
+          "area": "10"
+        },
+        {
+          "name": "kuchnia",
+          "area": "30"
+        },
+        {
+          "name": "salon",
+          "area": "40"
+        },
+        {
+          "name": "łazienka",
+          "area": "20"
+        }
+      ],
+      "photos": ["", "", ""]
+    },
+    {
+      "id": "3",
+      "title": "Mieszkanie 3",
+      "flatArea": "300",
+      "roomsNumber": "4",
+      "floor": "I",
+      "status": "Wolny",
+      "floorPlan": "",
+      "rooms": [
+        {
+          "name": "korytarz",
+          "area": "10"
+        },
+        {
+          "name": "kuchnia",
+          "area": "30"
+        },
+        {
+          "name": "salon",
+          "area": "40"
+        },
+        {
+          "name": "łazienka",
+          "area": "20"
+        }
+      ],
+      "photos": ["", "", ""]
+    }
+  ]
+}
