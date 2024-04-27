@@ -1,0 +1,44 @@
+body {
+  --font-size-default: 16px;
+  --font-family-default: Helvetica, Arial, sans-serif;
+  --color-text-default: #0b132b;
+  --color-dark-grafit: #2d373d;
+  --color-medium-grafit: #3b4a54;
+  --color-light-grafit: #3b4a54;
+  --color-teal: #028090;
+  --color-persian-green: #00a896;
+  --color-mint: #07beb8;
+  --color-tiffany-blue: #68d8d6;
+  --color-light-mint: #9ceaef;
+  --color-pastele-green: #c4fff9;
+  --gradient-one: linear-gradient(
+    to right top,
+    #00a896,
+    #22b1a2,
+    #35baae,
+    #46c3ba,
+    #55ccc6,
+    #65d3ce,
+    #74dbd6,
+    #82e2de,
+    #94e9e4,
+    #a4f1eb,
+    #b4f8f2,
+    #c4fff9
+  );
+  --gradient-two: linear-gradient(
+    to right top,
+    #028090,
+    #008893,
+    #008f95,
+    #009797,
+    #009e97,
+    #00a39a,
+    #00a99c,
+    #00ae9e,
+    #00b2a4,
+    #01b6ab,
+    #03bab1,
+    #07beb8
+  );
+}
