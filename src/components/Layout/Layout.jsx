@@ -1,7 +1,8 @@
 import { Footer } from "../Footer/Footer";
 import { Logo } from "../Logo/Logo";
 import { MainContent } from "../MainContent/MainContent";
-import { MainMenu } from "../MainMenu/MainMenu.";
+
+import { NavBar } from "../NavBar/NavBar";
 import { TopBar } from "../TopBar/TopBar";
 
 export function Layout() {
@@ -10,7 +11,7 @@ export function Layout() {
       <MainContent>
         <TopBar>
           <Logo />
-          <MainMenu />
+          <NavBar />
         </TopBar>
       </MainContent>
       <Footer />
