@@ -1,3 +1,4 @@
+import { Outlet } from "react-router-dom";
 import { Footer } from "../Footer/Footer";
 import { Logo } from "../Logo/Logo";
 import { MainContent } from "../MainContent/MainContent";
@@ -13,7 +14,9 @@ export function Layout() {
           <Logo />
           <NavBar />
         </TopBar>
+        <Outlet />
       </MainContent>
+
       <Footer />
     </>
   );

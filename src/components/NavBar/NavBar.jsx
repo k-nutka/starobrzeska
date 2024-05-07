@@ -1,4 +1,5 @@
 import styles from "./NavBar.module.css";
+
 import { NavLink } from "react-router-dom";
 import { useRef } from "react";
 import { MENUCATEGORIES } from "../../constants/categories";
@@ -11,6 +12,9 @@ export function NavBar() {
   return (
     <>
       <div ref={navRef} className={styles.mainMenu}>
+        <a className={styles.mainLink} href="#o-inwestycji">
+          O inwestycji
+        </a>
         {MENUCATEGORIES.map((category) => {
           return (
             <NavLink

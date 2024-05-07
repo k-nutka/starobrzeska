@@ -41,7 +41,7 @@
     gap: 1.5rem;
     background-color: var(--color-light-grafit);
     transition: 1s;
-    transform: translateY(-100vh);
+    transform: translateY(-150vh);
   }
   .responsive_nav {
     transform: none;

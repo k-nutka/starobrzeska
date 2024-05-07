@@ -1,8 +1,8 @@
 export const MENUCATEGORIES = [
-  {
-    categoryName: "O inwestycji",
-    path: "o-inwestycji",
-  },
+  // {
+  //   categoryName: "O inwestycji",
+  //   path: "#o-inwestycji",
+  // },
   {
     categoryName: "Galeria",
     path: "galeria",

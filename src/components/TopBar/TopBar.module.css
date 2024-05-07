@@ -2,8 +2,21 @@
   position: fixed;
   width: 100%;
   height: 100px;
-  background-color: var(--color-light-grafit);
+
   display: flex;
   justify-content: space-between;
   align-items: center;
+  z-index: 5;
+}
+.light {
+  background-color: #3b4a54c9;
+}
+.dark {
+  background-color: #3b4a54;
+}
+
+@media only screen and (max-width: 575px) {
+  .topBar {
+    height: 50px;
+  }
 }
