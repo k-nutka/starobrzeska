@@ -6,6 +6,8 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { Home } from "./views/Home/Home.jsx";
 import { Layout } from "./components/Layout/Layout.jsx";
 import { Gallery } from "./views/Gallery/Gallery.jsx";
+import { Inside } from "./views/Inside/Inside.jsx";
+import { Outside } from "./views/Outside/Outside.jsx";
 
 const router = createBrowserRouter([
   {
@@ -19,6 +21,14 @@ const router = createBrowserRouter([
       {
         path: "/galeria",
         element: <Gallery />,
+      },
+      {
+        path: "/galeria/wewnatrz",
+        element: <Inside />,
+      },
+      {
+        path: "/galeria/zewnatrz",
+        element: <Outside />,
       },
     ],
   },

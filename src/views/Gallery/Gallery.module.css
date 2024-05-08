@@ -1,0 +1,16 @@
+.gallery_container {
+  width: 80vw;
+  display: flex;
+}
+.gallery_block {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.gallery_photo {
+  width: 80%;
+  border-radius: 10px;
+}

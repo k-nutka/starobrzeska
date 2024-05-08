@@ -12,7 +12,7 @@ export function NavBar() {
   return (
     <>
       <div ref={navRef} className={styles.mainMenu}>
-        <a className={styles.mainLink} href="#o-inwestycji">
+        <a className={styles.mainLink} href="/#o-inwestycji">
           O inwestycji
         </a>
         {MENUCATEGORIES.map((category) => {
