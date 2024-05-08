@@ -1,9 +1,10 @@
 .about_container {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 20px;
+  margin: 30px;
 }
 .about_frame {
   width: 60vw;
@@ -11,18 +12,24 @@
 .about_block {
   width: 100%;
   display: flex;
-  margin: 15px;
+  margin: 15px 0;
 }
 .about_photo {
   width: 50%;
-  height: 100%;
 }
 .about_text {
+  width: 50%;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 20px;
+  text-align: center;
+
+  -webkit-box-shadow: inset 7px -1px 37px -13px rgba(2, 128, 144, 1);
+  -moz-box-shadow: inset 7px -1px 37px -13px rgba(2, 128, 144, 1);
+  box-shadow: inset 7px -1px 37px -13px rgba(2, 128, 144, 1);
 }
 h1 {
   margin: 20px auto;
@@ -30,4 +37,21 @@ h1 {
 h2 {
   margin: 15px auto;
   color: var(--color-teal);
+}
+
+@media only screen and (max-width: 1024px) {
+  .about_frame {
+    width: 80vw;
+  }
+  .about_block {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .about_photo {
+    width: 100%;
+  }
+  .about_text {
+    width: 100%;
+  }
 }

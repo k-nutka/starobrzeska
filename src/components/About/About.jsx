@@ -1,3 +1,4 @@
+import { ChooseBtn } from "../ChooseBtn/ChooseBtn";
 import styles from "./About.module.css";
 
 export function About() {
@@ -12,12 +13,11 @@ export function About() {
             alt={"wizualizacja-1"}
           />
           <div className={styles.about_text}>
-            <h2>Pełna infrastruktura/Projekt/Architektura</h2>
+            <h2>Architektura</h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
-              delectus quasi quas voluptatum, laborum itaque exercitationem
-              tenetur maiores ipsa deleniti dolores suscipit commodi quia alias.
-              In adipisci sunt provident est?
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
+              et soluta in id magnam recusandae vero officiis deserunt, aliquam
+              excepturi?
             </p>
           </div>
         </div>
@@ -54,6 +54,8 @@ export function About() {
           </div>
         </div>
       </div>
+
+      <ChooseBtn>Wybierz mieszkanie</ChooseBtn>
     </div>
   );
 }

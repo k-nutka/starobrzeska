@@ -5,15 +5,20 @@ import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { Home } from "./views/Home/Home.jsx";
 import { Layout } from "./components/Layout/Layout.jsx";
+import { Gallery } from "./views/Gallery/Gallery.jsx";
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "",
     element: <Layout />,
     children: [
       {
-        path: "/",
+        path: "",
         element: <Home />,
+      },
+      {
+        path: "/galeria",
+        element: <Gallery />,
       },
     ],
   },
