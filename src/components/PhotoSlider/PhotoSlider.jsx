@@ -1,32 +1,36 @@
-import Slider from "react-slick";
 import styles from "./PhotoSlider.module.css";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import { Slide } from "react-slideshow-image";
+import "react-slideshow-image/dist/styles.css";
 
-export function PhotoSlider() {
-  var settings = {
-    dots: true,
-    infinite: true,
-    speed: 1,
-    slidesToShow: 1,
-    slidesToScroll: 1,
+export function PhotoSlider({ photos, startIndex }) {
+  const images = photos;
+
+  const properties = {
+    duration: 5000, // czas trwania jednego slajdu w milisekundach (5 sekund w tym przypadku)
+    transitionDuration: 500, // czas trwania przejścia między slajdami
+    infinite: true, // zapętlanie prezentacji
+    indicators: true, // pokazuje wskaźniki slajdów
+    arrows: true, // pokazuje strzałki nawigacyjne
+    defaultIndex: startIndex,
   };
 
-  console.log("settings:", settings); // Dodaj logi dla ustawień Slidera
-
   return (
-    <div className={styles.mainSlider}>
-      <Slider {...settings}>
-        <div className={styles.photoDiv}>
-          <img className={styles.photo} src="/src/assets/slider-1.jpg"></img>
-        </div>
-        <div className={styles.photoDiv}>
-          <img className={styles.photo} src="/src/assets/slider-2.jpg"></img>
-        </div>
-        <div className={styles.photoDiv}>
-          <img className={styles.photo} src="/src/assets/slider-3.jpg"></img>
-        </div>
-      </Slider>
+    <div className={styles.slideContainer}>
+      <div className={styles.Slide}>
+        <Slide {...properties}>
+          {images.map((each, index) => (
+            <div key={index} className={styles.eachStyle}>
+              <div className={styles.imageContainer}>
+                <img
+                  className={styles.imagePhoto}
+                  src={each}
+                  alt={`Slide ${index + 1}`}
+                />
+              </div>
+            </div>
+          ))}
+        </Slide>
+      </div>
     </div>
   );
 }

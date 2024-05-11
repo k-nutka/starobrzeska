@@ -14,16 +14,14 @@ export function Gallery() {
               src="/src/assets/slider-1.jpg"
             ></img>
           </Link>
-        
         </div>
         <div className={styles.gallery_block}>
           <Link to={"/galeria"} className={styles.gallery_link}>
             <img
               className={styles.gallery_photo}
-              src="/src/assets/photo-1.jpg"
+              src="/src/assets/inside-1.jpg"
             ></img>
           </Link>
-         
         </div>
       </div>
     </TabStyle>

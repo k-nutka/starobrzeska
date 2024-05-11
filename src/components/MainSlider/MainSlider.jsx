@@ -7,12 +7,11 @@ export function MainSlider() {
     "/src/assets/slider-1.jpg",
     "/src/assets/slider-2.jpg",
     "/src/assets/slider-3.jpg",
-    "/src/assets/slider-4.jpg",
   ];
 
   const properties = {
-    duration: 2000, // czas trwania jednego slajdu w milisekundach (5 sekund w tym przypadku)
-    transitionDuration: 700, // czas trwania przejścia między slajdami
+    duration: 5000, // czas trwania jednego slajdu w milisekundach (5 sekund w tym przypadku)
+    transitionDuration: 500, // czas trwania przejścia między slajdami
     infinite: true, // zapętlanie prezentacji
     indicators: true, // pokazuje wskaźniki slajdów
     arrows: false, // pokazuje strzałki nawigacyjne

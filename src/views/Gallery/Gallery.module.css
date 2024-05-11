@@ -1,16 +1,24 @@
 .gallery_container {
-  width: 80vw;
+  width: 60vw;
   display: flex;
 }
 .gallery_block {
   width: 50%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
+  overflow: hidden;
+  margin: 20px;
 }
+
 .gallery_photo {
-  width: 80%;
-  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  transition: 0.3s;
+}
+.gallery_photo:hover {
+  transform: scale(1.2);
 }
