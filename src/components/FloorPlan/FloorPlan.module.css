@@ -1,0 +1,28 @@
+.floorPlan_container {
+  position: relative;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.floorPlan_img {
+  width: 80%;
+  object-fit: cover;
+}
+
+.floorPlan_btn {
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+  color: var(--color-light-mint);
+  background-color: var(--color-teal);
+  border: none;
+}
+.floorPlan_btn:hover {
+  color: var(--color-teal);
+  background-color: var(--color-light-mint);
+}
+
+.buttons_container {
+  position: absolute;
+}

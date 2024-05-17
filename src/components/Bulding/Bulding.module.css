@@ -1,0 +1,28 @@
+.bulding_container {
+  position: relative;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bulding_img {
+  width: 80%;
+  object-fit: cover;
+}
+
+.bulding_btn {
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+  color: var(--color-light-mint);
+  background-color: var(--color-teal);
+  border: none;
+}
+.bulding_btn:hover {
+  color: var(--color-teal);
+  background-color: var(--color-light-mint);
+}
+
+.buttons_container {
+  position: absolute;
+}
