@@ -1,5 +1,5 @@
 import styles from "./Bulding.module.css";
-import BULDING from "../../assets/bulding.jpg";
+import BULDING from "/bulding.jpg";
 
 export function Bulding({ setChoosenFloor }) {
   const onBuldingButtonHandler = (e) => {

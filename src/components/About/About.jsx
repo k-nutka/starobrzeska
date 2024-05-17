@@ -9,7 +9,7 @@ export function About() {
         <div className={styles.about_block}>
           <img
             className={styles.about_photo}
-            src={"/src/assets/map-1.jpg"}
+            src={"/map-1.jpg"}
             alt={"wizualizacja-1"}
           />
           <div className={styles.about_text}>
@@ -33,14 +33,14 @@ export function About() {
           </div>
           <img
             className={styles.about_photo}
-            src={"/src/assets/map-2.jpg"}
+            src={"/map-2.jpg"}
             alt={"wizualizacja-2"}
           />
         </div>
         <div className={styles.about_block}>
           <img
             className={styles.about_photo}
-            src={"/src/assets/map-3.jpg"}
+            src={"/map-3.jpg"}
             alt={"wizualizacja-3"}
           />
           <div className={styles.about_text}>

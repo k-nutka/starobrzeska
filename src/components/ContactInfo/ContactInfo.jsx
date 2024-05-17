@@ -1,6 +1,6 @@
 import styles from "./ContactInfo.module.css";
-import PHONE_ICON from "../../assets/phone.svg";
-import EMAIL_ICON from "../../assets/email.svg";
+import PHONE_ICON from "/phone.svg";
+import EMAIL_ICON from "/email.svg";
 
 export function ContactInfo() {
   return (

@@ -4,7 +4,7 @@ export function FloorPlan({ choosenFloor }) {
     <>
       <div className={styles.floorPlan_container}>
         <img
-          src={`/src/assets/pietro-${choosenFloor}.jpg`}
+          src={`/pietro-${choosenFloor}.jpg`}
           className={styles.floorPlan_img}
         />
         <div className={styles.buttons_container}>

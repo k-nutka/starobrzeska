@@ -1,8 +1,8 @@
 import styles from "./Footer.module.css";
 import { NavLink } from "react-router-dom";
 import { MENUCATEGORIES } from "../../constants/categories";
-import FB_ICON from "../../assets/facebook.svg";
-import LOGO from "../../assets/logo.png";
+import FB_ICON from "/facebook.svg";
+import LOGO from "/logo.png";
 export function Footer() {
   return (
     <div className={styles.footerContainer}>
