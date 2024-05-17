@@ -5,8 +5,8 @@ body {
   --color-dark-grafit: #2d373d;
   --color-medium-grafit: #3b4a54;
   --color-light-grafit: #3b4a54;
-  --color-teal: #028090;
-  --color-persian-green: #00a896;
+  --color-teal: rgb(2, 128, 144);
+  --color-persian-green: rgb(0, 168, 150);
   --color-mint: #07beb8;
   --color-tiffany-blue: #68d8d6;
   --color-light-mint: #9ceaef;

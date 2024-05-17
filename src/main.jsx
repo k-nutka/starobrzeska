@@ -8,6 +8,7 @@ import { Layout } from "./components/Layout/Layout.jsx";
 import { Gallery } from "./views/Gallery/Gallery.jsx";
 import { Inside } from "./views/Inside/Inside.jsx";
 import { Outside } from "./views/Outside/Outside.jsx";
+import { Contact } from "./views/Contact/Contact.jsx";
 
 const router = createBrowserRouter([
   {
@@ -30,6 +31,7 @@ const router = createBrowserRouter([
         path: "/galeria/zewnatrz",
         element: <Outside />,
       },
+      { path: "/kontakt", element: <Contact /> },
     ],
   },
 ]);

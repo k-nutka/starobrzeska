@@ -11,5 +11,4 @@ export const INSIDEPHOTOS = [
   "/src/assets/inside-3.jpg",
   "/src/assets/inside-4.jpg",
   "/src/assets/inside-5.jpg",
-  "/src/assets/inside-6.jpg",
 ];

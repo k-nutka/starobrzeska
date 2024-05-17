@@ -23,7 +23,7 @@ h3 {
 }
 a {
   text-decoration: none;
-  color: var(--color-text-default);
+  color: var(--color-teal);
   cursor: pointer;
 }
 button {
