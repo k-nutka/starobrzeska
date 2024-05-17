@@ -26,3 +26,9 @@
 .buttons_container {
   position: absolute;
 }
+@media only screen and (max-width: 800px) {
+  .bulding_container {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}

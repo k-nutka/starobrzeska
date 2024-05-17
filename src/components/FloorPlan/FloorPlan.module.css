@@ -26,3 +26,9 @@
 .buttons_container {
   position: absolute;
 }
+@media only screen and (max-width: 800px) {
+  .floorPlan_container {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
