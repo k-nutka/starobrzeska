@@ -21,6 +21,7 @@ export function NavBar() {
               className={styles.mainLink}
               key={category.path}
               to={category.path}
+              onClick={showNavBar}
             >
               {category.categoryName}
             </NavLink>
