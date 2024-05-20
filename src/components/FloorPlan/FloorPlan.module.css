@@ -1,9 +1,10 @@
 .floorPlan_container {
   position: relative;
-  width: 50%;
+  width: 80%;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 40px;
 }
 .floorPlan_img {
   width: 80%;
@@ -29,6 +30,5 @@
 @media only screen and (max-width: 800px) {
   .floorPlan_container {
     width: 100%;
-    margin-bottom: 30px;
   }
 }

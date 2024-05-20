@@ -10,6 +10,10 @@ import { Inside } from "./views/Inside/Inside.jsx";
 import { Outside } from "./views/Outside/Outside.jsx";
 import { Contact } from "./views/Contact/Contact.jsx";
 import { ChooseApartment } from "./views/ChooseApartment/ChooseApartment.jsx";
+import { FloorPlan } from "./components/FloorPlan/FloorPlan.jsx";
+import { FloorPlanFirst } from "./components/FloorPlan/FloorPlanFirst.jsx";
+import { FloorPlanSecond } from "./components/FloorPlan/FloorPlanSecond.jsx";
+import { Apartment } from "./views/Apartment/Apartment.jsx";
 
 const router = createBrowserRouter([
   {
@@ -33,7 +37,26 @@ const router = createBrowserRouter([
         element: <Outside />,
       },
       { path: "/kontakt", element: <Contact /> },
-      { path: "/wybierz-mieszkanie", element: <ChooseApartment /> },
+      {
+        path: "/wybierz-mieszkanie",
+        element: <ChooseApartment />,
+      },
+      {
+        path: "/wybierz-mieszkanie/pietro/0",
+        element: <FloorPlan />,
+      },
+      {
+        path: "/wybierz-mieszkanie/pietro/1",
+        element: <FloorPlanFirst />,
+      },
+      {
+        path: "/wybierz-mieszkanie/pietro/2",
+        element: <FloorPlanSecond />,
+      },
+      {
+        path: "/wybierz-mieszkanie/pietro/3",
+        element: <Apartment />,
+      },
     ],
   },
 ]);

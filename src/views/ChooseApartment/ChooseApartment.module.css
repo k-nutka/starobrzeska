@@ -1,17 +1,47 @@
 .chooseApartment_container {
-  margin-top: 20px;
+  margin: 20px 0px;
   width: 100vw;
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
+.bulding_container {
+  position: relative;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bulding_img {
+  width: 80%;
+  object-fit: cover;
+}
+
+.bulding_btn {
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+  color: var(--color-light-mint);
+  background-color: var(--color-teal);
+  border: none;
+}
+.bulding_btn:hover {
+  color: var(--color-teal);
+  background-color: var(--color-light-mint);
+}
+
+.buttons_container {
+  position: absolute;
+}
+@media only screen and (max-width: 800px) {
+  .bulding_container {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
 @media only screen and (max-width: 1024px) {
   .chooseApartment_container {
     width: 80vw;
-  }
-}
-@media only screen and (max-width: 800px) {
-  .chooseApartment_container {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
   }
 }

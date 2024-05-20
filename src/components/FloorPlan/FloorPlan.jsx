@@ -1,12 +1,11 @@
+import { TabStyle } from "../TabStyle/TabStyle";
 import styles from "./FloorPlan.module.css";
-export function FloorPlan({ choosenFloor }) {
+export function FloorPlan() {
   return (
-    <>
+    <TabStyle>
+      <h1>Piętro 0</h1>
       <div className={styles.floorPlan_container}>
-        <img
-          src={`/pietro-${choosenFloor}.jpg`}
-          className={styles.floorPlan_img}
-        />
+        <img src={`/pietro-0.jpg`} className={styles.floorPlan_img} />
         <div className={styles.buttons_container}>
           <button id={0} value={0} className={styles.floorPlan_btn}>
             0
@@ -22,6 +21,6 @@ export function FloorPlan({ choosenFloor }) {
           </button>
         </div>
       </div>
-    </>
+    </TabStyle>
   );
 }
