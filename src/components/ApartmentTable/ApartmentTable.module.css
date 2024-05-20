@@ -1,0 +1,27 @@
+.apartmentTable_container {
+  width: 80vw;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+table {
+  width: 80%;
+  padding: 1px;
+
+  text-transform: uppercase;
+}
+th {
+  padding: 10px;
+  background-color: var(--color-light-grafit);
+  color: var(--color-light-mint);
+  font-weight: 300;
+}
+td {
+  text-align: center;
+  padding: 10px;
+  -webkit-box-shadow: inset 7px -1px 37px -13px rgba(2, 128, 144, 1);
+  -moz-box-shadow: inset 7px -1px 37px -13px rgba(2, 128, 144, 1);
+  box-shadow: inset 7px -1px 37px -13px rgba(2, 128, 144, 1);
+  font-weight: 600;
+}

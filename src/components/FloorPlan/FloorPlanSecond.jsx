@@ -7,17 +7,17 @@ export function FloorPlanSecond() {
       <div className={styles.floorPlan_container}>
         <img src={`/pietro-2.jpg`} className={styles.floorPlan_img} />
         <div className={styles.buttons_container}>
-          <button id={0} value={0} className={styles.floorPlan_btn}>
-            0
+          <button id={8} value={8} className={styles.floorPlan_btn}>
+            8
           </button>
-          <button id={1} value={1} className={styles.floorPlan_btn}>
-            1
+          <button id={9} value={9} className={styles.floorPlan_btn}>
+            9
           </button>
-          <button id={2} value={2} className={styles.floorPlan_btn}>
-            2
+          <button id={10} value={10} className={styles.floorPlan_btn}>
+            10
           </button>
-          <button id={3} value={3} className={styles.floorPlan_btn}>
-            3
+          <button id={11} value={11} className={styles.floorPlan_btn}>
+            11
           </button>
         </div>
       </div>

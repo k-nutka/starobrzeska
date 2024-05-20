@@ -13,7 +13,9 @@ import { ChooseApartment } from "./views/ChooseApartment/ChooseApartment.jsx";
 import { FloorPlan } from "./components/FloorPlan/FloorPlan.jsx";
 import { FloorPlanFirst } from "./components/FloorPlan/FloorPlanFirst.jsx";
 import { FloorPlanSecond } from "./components/FloorPlan/FloorPlanSecond.jsx";
+import { FloorPlanThird } from "./components/FloorPlan/FloorPlanThird.jsx";
 import { Apartment } from "./views/Apartment/Apartment.jsx";
+import { apartmentLoader } from "./api/apartmentLoader.js";
 
 const router = createBrowserRouter([
   {
@@ -55,7 +57,12 @@ const router = createBrowserRouter([
       },
       {
         path: "/wybierz-mieszkanie/pietro/3",
+        element: <FloorPlanThird />,
+      },
+      {
+        path: "/wybierz-mieszkanie/mieszkanie/:apartmentId",
         element: <Apartment />,
+        loader: apartmentLoader,
       },
     ],
   },

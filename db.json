@@ -7,54 +7,60 @@
       "roomsNumber": "4",
       "floor": "I",
       "status": "Wolny",
-      "floorPlan": "",
+      "floorPlan": "/rzut.jpg",
       "rooms": [
         {
           "name": "korytarz",
-          "area": "10"
+          "area": "50"
         },
         {
           "name": "kuchnia",
-          "area": "30"
+          "area": "40"
         },
         {
           "name": "salon",
-          "area": "40"
+          "area": "30"
         },
         {
           "name": "łazienka",
           "area": "20"
         }
       ],
-      "photos": ["", "", ""]
+      "photos": [
+        "/inside-1.jpg",
+        "/inside-2.jpg",
+        "/inside-3.jpg",
+        "/inside-4.jpg",
+        "/inside-5.jpg"
+      ]
     },
     {
       "id": "2",
       "title": "Mieszkanie 2",
       "flatArea": "200",
-      "roomsNumber": "4",
-      "floor": "I",
-      "status": "Wolny",
-      "floorPlan": "",
+      "roomsNumber": "8",
+      "floor": "III",
+      "status": "Zarezerwowany",
+      "floorPlan": "/rzut.jpg",
       "rooms": [
         {
           "name": "korytarz",
-          "area": "10"
+          "area": "20"
         },
         {
           "name": "kuchnia",
-          "area": "30"
+          "area": "315"
         },
         {
           "name": "salon",
-          "area": "40"
+          "area": "100"
         },
         {
           "name": "łazienka",
           "area": "20"
         }
       ],
-      "photos": ["", "", ""]
+      "photos": ["/inside-1.jpg", "/inside-2.jpg", "/inside-3.jpg"]
     },
     {
       "id": "3",
@@ -62,8 +68,8 @@
       "flatArea": "300",
       "roomsNumber": "4",
       "floor": "I",
-      "status": "Wolny",
-      "floorPlan": "",
+      "status": "Sprzedane",
+      "floorPlan": "/rzut.jpg",
       "rooms": [
         {
           "name": "korytarz",
@@ -71,18 +77,18 @@
         },
         {
           "name": "kuchnia",
-          "area": "30"
+          "area": "398"
         },
         {
           "name": "salon",
-          "area": "40"
+          "area": "5003"
         },
         {
           "name": "łazienka",
           "area": "20"
         }
       ],
-      "photos": ["", "", ""]
+      "photos": ["/inside-3.jpg", "/inside-4.jpg"]
     }
   ]
 }

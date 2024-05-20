@@ -1,9 +1,9 @@
 import styles from "./ApartmentPhoto.module.css";
 
-export function ApartmentPhoto() {
+export function ApartmentPhoto({ floorPlan }) {
   return (
-    <div className={styles.ApartmentPhoto_img}>
-      <img src={"/rzut.jpg"}></img>
+    <div className={styles.apartmentPhoto_container}>
+      <img className={styles.apartmentPhoto_img} src={floorPlan}></img>
     </div>
   );
 }

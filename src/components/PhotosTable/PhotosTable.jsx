@@ -6,6 +6,10 @@ export function PhotosTable({ photos }) {
   const [showSlider, setShowSlider] = useState(false);
   const [startIndex, setStartIndex] = useState(null);
   const onImageClickHandler = (index) => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
     setStartIndex(index);
     setShowSlider(true);
   };

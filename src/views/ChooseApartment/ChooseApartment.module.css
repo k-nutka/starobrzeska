@@ -1,16 +1,10 @@
-.chooseApartment_container {
-  margin: 20px 0px;
-  width: 100vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 .bulding_container {
   position: relative;
   width: 80%;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 30px;
 }
 .bulding_img {
   width: 80%;

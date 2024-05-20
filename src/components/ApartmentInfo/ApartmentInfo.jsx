@@ -1,11 +1,23 @@
 import styles from "./ApartmentInfo.module.css";
-export function ApartmentInfo() {
+export function ApartmentInfo({ apartment }) {
   return (
     <div className={styles.apartmentInfo_container}>
-      <p className={styles.apartment_area}>56.70</p>
-      <p className={styles.roomsNumber}>4</p>
-      <p className={styles.floorsNumber}>0</p>
-      <p className={styles.state}>Wolny</p>
+      <p className={styles.apartmentInfo_text}>
+        Powierzchnia:{" "}
+        <span className={styles.apartment_area}>
+          {apartment.flatArea} m<sup></sup>2
+        </span>
+      </p>
+      <p className={styles.apartmentInfo_text}>
+        Liczba pomieszczeń:{" "}
+        <span className={styles.roomsNumber}>{apartment.roomsNumber}</span>
+      </p>
+      <p className={styles.apartmentInfo_text}>
+        Piętro: <span className={styles.floorsNumber}>{apartment.floor}</span>{" "}
+      </p>
+      <p className={styles.apartmentInfo_text}>
+        Status: <span className={styles.status}>{apartment.status}</span>{" "}
+      </p>
     </div>
   );
 }
