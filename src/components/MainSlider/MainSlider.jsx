@@ -1,9 +1,10 @@
 import styles from "./MainSlider.module.css";
 import { Slide } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css";
+import { SLIDER } from "../../constants/galleryPhotos";
 
 export function MainSlider() {
-  const images = ["/slider-1.jpg", "/slider-2.jpg", "/slider-3.jpg"];
+  const images = SLIDER;
 
   const properties = {
     duration: 5000, // czas trwania jednego slajdu w milisekundach (5 sekund w tym przypadku)

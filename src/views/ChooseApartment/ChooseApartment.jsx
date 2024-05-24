@@ -1,6 +1,6 @@
 import styles from "./ChooseApartment.module.css";
 import { TabStyle } from "../../components/TabStyle/TabStyle";
-import BULDING from "/bulding.jpg";
+import BULDING from "/bulding.png";
 import { Link } from "react-router-dom";
 
 export function ChooseApartment() {

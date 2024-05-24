@@ -1,8 +1,13 @@
 export const OUTSIDEPHOTOS = [
-  "/slider-1.jpg",
-  "/slider-2.jpg",
-  "/slider-3.jpg",
-  "/slider-4.jpg",
+  "/Image8.png",
+  "/Image9.png",
+  "/Image13.png",
+  "/Image14.png",
+  "/Image15.png",
+  "/Image16.png",
+  "/Image17.png",
+  "/Image18.png",
+  "/Image19.png",
 ];
 
 export const INSIDEPHOTOS = [
@@ -11,4 +16,10 @@ export const INSIDEPHOTOS = [
   "/inside-3.jpg",
   "/inside-4.jpg",
   "/inside-5.jpg",
+];
+export const SLIDER = [
+  "/Image8.png",
+  "/Image16.png",
+  "/Image17.png",
+  "/Image19.png",
 ];
