@@ -1,36 +1,55 @@
 import styles from "./ChooseApartment.module.css";
 import { TabStyle } from "../../components/TabStyle/TabStyle";
-import BULDING from "/bulding.png";
+import { useRef, useEffect } from "react";
+import BULDING from "/building.png";
 import { Link } from "react-router-dom";
 
 export function ChooseApartment() {
+  const svgRef = useRef(null);
+
+  useEffect(() => {
+    const svg = svgRef.current;
+    const img = new Image();
+    img.src = BULDING;
+    img.onload = () => {
+      const imgWidth = img.naturalWidth;
+      const imgHeight = img.naturalHeight;
+      const viewBox = `0 0 ${imgWidth} ${imgHeight}`;
+      svg.setAttribute("viewBox", viewBox);
+    };
+  }, []);
+
   return (
     <TabStyle>
       <h1>Wybierz mieszkanie </h1>
-      <div className={styles.bulding_container}>
-        <img src={BULDING} className={styles.bulding_img} />
-        <div className={styles.buttons_container}>
-          <Link to={`/wybierz-mieszkanie/pietro/0`}>
-            <button id={0} value={0} className={styles.bulding_btn}>
-              0
-            </button>
+      <div className={styles.buldingContainer}>
+        <svg ref={svgRef} className={styles.buildingSvg}>
+          <image href={BULDING} x="0" y="0" width="100%" />
+          <Link to={"/wybierz-mieszkanie/pietro/0"}>
+            <path
+              className={styles.buildingArea}
+              d="M81,519 L1144,488 L1141,574 L243,762 L84,627 Z"
+            />
           </Link>
-          <Link to={`/wybierz-mieszkanie/pietro/1`}>
-            <button id={1} value={1} className={styles.bulding_btn}>
-              1
-            </button>
+          <Link to={"/wybierz-mieszkanie/pietro/1"}>
+            <path
+              className={styles.buildingArea}
+              d="M83,398 L1144,408 L1141,487 L83,520 L18,476 Z"
+            />
           </Link>
-          <Link to={`/wybierz-mieszkanie/pietro/2`}>
-            <button id={2} value={2} className={styles.bulding_btn}>
-              2
-            </button>
+          <Link to={"/wybierz-mieszkanie/pietro/2"}>
+            <path
+              className={styles.buildingArea}
+              d="M235,241 L1142,337 L1141,407 L84,395 L4,397 L81,305 Z"
+            />
           </Link>
-          <Link to={`/wybierz-mieszkanie/pietro/3`}>
-            <button id={3} value={3} className={styles.bulding_btn}>
-              3
-            </button>
+          <Link to={"/wybierz-mieszkanie/pietro/3"}>
+            <path
+              className={styles.buildingArea}
+              d="M73,187 L230,17 L1143,262 L1144,339 L237,240 L81,307 L-1,305 Z"
+            />
           </Link>
-        </div>
+        </svg>
       </div>
     </TabStyle>
   );

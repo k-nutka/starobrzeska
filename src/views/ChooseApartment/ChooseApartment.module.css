@@ -1,4 +1,4 @@
-.bulding_container {
+.buldingContainer {
   position: relative;
   width: 80%;
   display: flex;
@@ -10,32 +10,25 @@
   width: 80%;
   object-fit: cover;
 }
-
-.bulding_btn {
-  width: 50px;
-  height: 50px;
-  margin: 5px;
-  color: var(--color-light-mint);
-  background-color: var(--color-teal);
-  border: none;
-}
-.bulding_btn:hover {
-  color: var(--color-teal);
-  background-color: var(--color-light-mint);
+.buildingSvg {
+  display: block;
+  width: 80%; /* SVG skaluje się do rozmiaru kontenera */
+  height: auto;
 }
 
-.buttons_container {
-  position: absolute;
+.buildingArea {
+  fill: transparent; /* Czerwony kolor z przezroczystością */
+  cursor: pointer;
+  transition: fill 0.3s ease;
 }
+
+.buildingArea:hover {
+  fill: #0280908e; /* Zmiana koloru przy najechaniu */
+}
+
 @media only screen and (max-width: 800px) {
-  .bulding_container {
+  .buldingContainer {
     width: 100%;
     margin-bottom: 20px;
-  }
-}
-
-@media only screen and (max-width: 1024px) {
-  .chooseApartment_container {
-    width: 80vw;
   }
 }
