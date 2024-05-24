@@ -1,15 +1,13 @@
 import { useState } from "react";
 import styles from "./PhotosTable.module.css";
 import { PhotoSlider } from "../../components/PhotoSlider/PhotoSlider";
+import { ScrollToTop } from "../../api/ScrollToTop";
 
 export function PhotosTable({ photos }) {
   const [showSlider, setShowSlider] = useState(false);
   const [startIndex, setStartIndex] = useState(null);
   const onImageClickHandler = (index) => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
+    ScrollToTop()
     setStartIndex(index);
     setShowSlider(true);
   };
