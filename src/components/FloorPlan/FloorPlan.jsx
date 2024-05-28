@@ -1,35 +1,90 @@
-import { TabStyle } from "../TabStyle/TabStyle";
+import { useRef, useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import styles from "./FloorPlan.module.css";
-import { Link } from "react-router-dom";
+import PARTER from "/parter.jpg"; // Upewnij się, że ścieżka jest poprawna
+
 export function FloorPlan() {
+  const svgRef = useRef(null);
+  const [viewBox, setViewBox] = useState("");
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    const img = new Image();
+    img.src = PARTER;
+    img.onload = () => {
+      const imgWidth = img.naturalWidth;
+      const imgHeight = img.naturalHeight;
+      setViewBox(`0 0 ${imgWidth} ${imgHeight}`);
+    };
+  }, []);
+
+  const handleAreaClick = (room) => {
+    navigate(`/wybierz-mieszkanie/mieszkanie/${room}`);
+  };
+
   return (
-    <TabStyle>
-      <h1>Piętro 0</h1>
-      <div className={styles.floorPlan_container}>
-        <img src={`/pietro-0.jpg`} className={styles.floorPlan_img} />
-        <div className={styles.buttons_container}>
-          <Link to={`/wybierz-mieszkanie/mieszkanie/0`}>
-            <button id={0} value={0} className={styles.floorPlan_btn}>
-              0
-            </button>
-          </Link>
-          <Link to={"/wybierz-mieszkanie/mieszkanie/1"}>
-            <button id={1} value={1} className={styles.floorPlan_btn}>
-              1
-            </button>
-          </Link>
-          <Link to={"/wybierz-mieszkanie/mieszkanie/2"}>
-            <button id={2} value={2} className={styles.floorPlan_btn}>
-              2
-            </button>
-          </Link>
-          <Link to={"/wybierz-mieszkanie/mieszkanie/3"}>
-            <button id={3} value={3} className={styles.floorPlan_btn}>
-              3
-            </button>
-          </Link>
-        </div>
-      </div>
-    </TabStyle>
+    <div className={styles.buildingContainer}>
+      <h1>Wybierz mieszkanie - parter</h1>
+      {viewBox && (
+        <svg ref={svgRef} viewBox={viewBox} className={styles.buildingSvg}>
+          <image href={PARTER} x="0" y="0" />
+          <path
+            className={styles.buildingArea}
+            onClick={() => handleAreaClick("1")}
+            d="M698,878 L491,882 L505,527 L706,531 Z"
+          />
+          <path
+            className={styles.buildingArea}
+            onClick={() => handleAreaClick("2")}
+            d="M160,522 L508,527 L488,883 L135,880 Z"
+          />
+          <path
+            className={styles.buildingArea}
+            onClick={() => handleAreaClick("3")}
+            d="M452,532 L160,531 L189,117 L472,120 Z"
+          />
+          <path
+            className={styles.buildingArea}
+            onClick={() => handleAreaClick("4")}
+            d="M472,117 L717,119 L706,451 L454,451 Z"
+          />
+          <path
+            className={styles.buildingArea}
+            onClick={() => handleAreaClick("5")}
+            d="M720,115 L964,117 L961,453 L706,454 Z"
+          />
+          <path
+            className={styles.buildingArea}
+            onClick={() => handleAreaClick("6")}
+            d="M959,119 L1214,120 L1215,454 L961,456 Z"
+          />
+          <path
+            className={styles.buildingArea}
+            onClick={() => handleAreaClick("7")}
+            d="M1215,120 L1461,124 L1473,461 L1214,454 Z"
+          />
+          <path
+            className={styles.buildingArea}
+            onClick={() => handleAreaClick("8")}
+            d="M1463,125 L1743,122 L1760,537 L1473,534 Z"
+          />
+          <path
+            className={styles.buildingArea}
+            onClick={() => handleAreaClick("9")}
+            d="M1434,541 L1765,543 L1783,882 L1444,892 Z"
+          />
+          <path
+            className={styles.buildingArea}
+            onClick={() => handleAreaClick("10")}
+            d="M1168,532 L1431,532 L1441,887 L1175,885 Z"
+          />
+          <path
+            className={styles.buildingArea}
+            onClick={() => handleAreaClick("11")}
+            d="M924,534 L1168,534 L1176,890 L924,890 Z"
+          />
+        </svg>
+      )}
+    </div>
   );
 }

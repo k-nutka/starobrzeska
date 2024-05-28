@@ -12,18 +12,18 @@
 }
 .buildingSvg {
   display: block;
-  width: 80%; /* SVG skaluje się do rozmiaru kontenera */
+  width: 80%;
   height: auto;
 }
 
 .buildingArea {
-  fill: transparent; /* Czerwony kolor z przezroczystością */
+  fill: transparent;
   cursor: pointer;
   transition: fill 0.3s ease;
 }
 
 .buildingArea:hover {
-  fill: #0280908e; /* Zmiana koloru przy najechaniu */
+  fill: #0280908e;
 }
 
 @media only screen and (max-width: 800px) {

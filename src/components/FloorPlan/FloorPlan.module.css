@@ -1,34 +1,31 @@
-.floorPlan_container {
+.buildingContainer {
   position: relative;
-  width: 80%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 40px;
-}
-.floorPlan_img {
-  width: 80%;
-  object-fit: cover;
+  margin-top: 100px;
+  margin-bottom: 30px;
+  width: 100%; /* Zapewnia responsywność */
 }
 
-.floorPlan_btn {
-  width: 50px;
-  height: 50px;
-  margin: 5px;
-  color: var(--color-light-mint);
-  background-color: var(--color-teal);
-  border: none;
-}
-.floorPlan_btn:hover {
-  color: var(--color-teal);
-  background-color: var(--color-light-mint);
+.buildingSvg {
+  width: 80%; /* SVG skaluje się do rozmiaru kontenera */
+  height: auto;
 }
 
-.buttons_container {
-  position: absolute;
+.buildingArea {
+  fill: transparent;
+  cursor: pointer;
+  transition: fill 0.3s ease;
 }
-@media only screen and (max-width: 800px) {
-  .floorPlan_container {
-    width: 100%;
+
+.buildingArea:hover {
+  fill: #0280908e;
+}
+@media only screen and (max-width: 575px) {
+  .buildingContainer {
+    margin-top: 50px;
+    text-align: center;
   }
 }

@@ -21,7 +21,7 @@ export function ChooseApartment() {
 
   return (
     <TabStyle>
-      <h1>Wybierz mieszkanie </h1>
+      <h1>Wybierz piętro </h1>
       <div className={styles.buldingContainer}>
         <svg ref={svgRef} className={styles.buildingSvg}>
           <image href={BULDING} x="0" y="0" width="100%" />
