@@ -1,8 +1,10 @@
+import { ScrollToTop } from "../../api/ScrollToTop";
 import { TabStyle } from "../../components/TabStyle/TabStyle";
 import styles from "./Gallery.module.css";
 import { Link } from "react-router-dom";
 
 export function Gallery() {
+  ScrollToTop();
   return (
     <TabStyle>
       <h1>Galeria</h1>

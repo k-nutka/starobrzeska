@@ -7,7 +7,7 @@ export function PhotosTable({ photos }) {
   const [showSlider, setShowSlider] = useState(false);
   const [startIndex, setStartIndex] = useState(null);
   const onImageClickHandler = (index) => {
-    ScrollToTop()
+    ScrollToTop();
     setStartIndex(index);
     setShowSlider(true);
   };

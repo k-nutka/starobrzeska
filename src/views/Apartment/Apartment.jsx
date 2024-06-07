@@ -8,15 +8,22 @@ import { useLoaderData } from "react-router-dom";
 
 export function Apartment() {
   const apartment = useLoaderData();
+  if (!apartment) {
+    return <div>Loading...</div>;
+  }
+
+  const { content } = apartment;
+  const apartmentPhotos = content.photos.map((x) => x.filename);
+
   return (
     <TabStyle>
-      <h1>{apartment.title}</h1>
+      <h1>{content.title}</h1>
       <div className={styles.apartment_basicInfo}>
-        <ApartmentPhoto floorPlan={apartment.floorPlan} />
-        <ApartmentInfo apartment={apartment} />
+        <ApartmentPhoto floorPlan={content.floorPlan[0].filename} />
+        <ApartmentInfo apartment={content} />
       </div>
-      <ApartmentTable rooms={apartment.rooms} />
-      <PhotosTable photos={apartment.photos} />
+      <ApartmentTable rooms={content.rooms} />
+      <PhotosTable photos={apartmentPhotos} />
     </TabStyle>
   );
 }
