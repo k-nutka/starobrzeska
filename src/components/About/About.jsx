@@ -15,9 +15,12 @@ export function About() {
           <div className={styles.about_text}>
             <h2>Architektura</h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
-              et soluta in id magnam recusandae vero officiis deserunt, aliquam
-              excepturi?
+              Mieszkania w&nbsp;ramach inwestycji Starobrzeska zaprojektowano
+              z&nbsp;myślą o&nbsp;harmonijnym połączeniu nowoczesnych trendów
+              architektonicznych z&nbsp;funkcjonalnością. Każdy detal został
+              starannie przemyślany, aby&nbsp;tworzyć spójną i&nbsp;atrakcyjną
+              całość. Dotakowymi atutami inwestycji są garaże podziemne, komórki
+              lokatorskie, winda oraz&nbsp; miejsca postojowe na&nbsp;zewnątrz.
             </p>
           </div>
         </div>
@@ -25,10 +28,12 @@ export function About() {
           <div className={styles.about_text}>
             <h2>Lokalizacja</h2>
             <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla
-              illum id laudantium neque impedit optio expedita fuga libero enim
-              quae, saepe voluptatem soluta. Eligendi saepe totam pariatur
-              facere doloremque quod?
+              Inwestycja Starobrzeska jest położona w&nbsp;strategicznym
+              miejscu, które&nbsp;zapewnia łatwy dostęp do&nbsp;wszelkich
+              udogodnień miejskich. Bliskość szkół, przedszkoli, sklepów,
+              Letnego Basenu Brzeskiego, a&nbsp;także przystanków komunikacji
+              miejskiej sprawia, że&nbsp;codzienne życie staje&nbsp;się
+              wyjątkowo wygodne.
             </p>
           </div>
           <img
@@ -46,10 +51,12 @@ export function About() {
           <div className={styles.about_text}>
             <h2>Jakość materiałów</h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
-              repellendus nam debitis quasi officia molestias fuga reiciendis
-              laborum sapiente dolorum numquam doloremque, corporis blanditiis
-              sit dicta, beatae doloribus laudantium voluptatibus!
+              Inwestycja Starobrzeska to&nbsp;synonim najwyższej jakości,
+              zarówno pod&nbsp;względem architektury, jak&nbsp;i&nbsp;użytych
+              materiałów budowlanych. Każdy element, od&nbsp;fundamentów
+              po&nbsp;wykończenie wnętrz, został starannie dobrany,
+              aby&nbsp;zapewnić przyszłym mieszkańcom komfort, bezpieczeństwo
+              i&nbsp;trwałość na&nbsp;lata.
             </p>
           </div>
         </div>

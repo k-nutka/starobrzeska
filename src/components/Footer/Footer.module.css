@@ -65,8 +65,8 @@ li {
 }
 @media only screen and (min-width: 1025px) {
   .logo {
-    width: 300px;
-    height: 300px;
+    width: 180px;
+    height: 180px;
   }
   .footerContainer {
     font-size: 20px;

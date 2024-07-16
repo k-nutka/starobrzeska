@@ -3,7 +3,7 @@ body {
   --font-family-default: Helvetica, Arial, sans-serif;
   --color-text-default: #0b132b;
   --color-dark-grafit: #2d373d;
-  --color-medium-grafit: #3b4a54;
+  --color-medium-grafit: rgb(59, 74, 84);
   --color-light-grafit: #3b4a54;
   --color-teal: #028090;
   --color-persian-green: rgb(0, 168, 150);

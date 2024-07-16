@@ -1,0 +1,18 @@
+.localization_container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.localization_frame {
+  width: 60vw;
+  height: 400px;
+  border-radius: 5px;
+  margin: 30px auto;
+
+  box-shadow: 0px 0px 15px 8px rgba(59, 74, 84, 0.4);
+  -webkit-box-shadow: 0px 0px 15px 8px rgba(59, 74, 84, 0.4);
+  -moz-box-shadow: 0px 0px 15px 8px rgba(59, 74, 84, 0.4);
+}

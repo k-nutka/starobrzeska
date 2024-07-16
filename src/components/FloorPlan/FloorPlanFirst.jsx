@@ -31,7 +31,7 @@ export function FloorPlanFirst() {
             <image href={FLOOR} x="0" y="0" />
             <path
               className={styles.buildingArea}
-              onClick={() => handleAreaClick("m-111")}
+              onClick={() => handleAreaClick("m-11")}
               d="M491,894 L503,531 L717,532 L712,738 L805,738 L808,895 Z"
             />
             <path
