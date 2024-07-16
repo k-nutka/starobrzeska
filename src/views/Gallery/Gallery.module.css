@@ -1,6 +1,7 @@
 .gallery_container {
   width: 60vw;
   display: flex;
+  margin-bottom: 30px;
 }
 .gallery_block {
   width: 50%;

@@ -2,3 +2,10 @@
   width: 80vw;
   display: flex;
 }
+@media only screen and (max-width: 1024px) {
+  .apartment_basicInfo {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
