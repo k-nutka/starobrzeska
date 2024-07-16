@@ -1,12 +1,28 @@
 .slideContainer {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
+
   z-index: 10;
-  padding: 40px;
   backdrop-filter: blur(10px);
+}
+
+.closeBtn {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 50px;
+  height: 50px;
+
+  z-index: 20;
+  border: none;
+  background-color: #3b4a54ed;
+  color: var(--color-teal);
+  border-radius: 15px;
+  font-weight: 700;
+  font-size: 2rem;
 }
 
 .imagePhoto {
@@ -15,12 +31,6 @@
   height: 100%;
 }
 
-@media only screen and (max-width: 600px) {
-  .slideContainer {
-    padding: 20px;
-    height: 150vh;
-  }
-  .imageContainer {
-    margin-top: 100px;
-  }
+.react-slideshow-container {
+  height: 92vh !important;
 }

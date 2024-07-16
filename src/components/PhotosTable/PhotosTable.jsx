@@ -11,9 +11,6 @@ export function PhotosTable({ photos }) {
     setStartIndex(index);
     setShowSlider(true);
   };
-  const onCloseClickHandler = () => {
-    setShowSlider(false);
-  };
 
   return (
     <>
@@ -36,9 +33,6 @@ export function PhotosTable({ photos }) {
       <div>
         {showSlider && (
           <div>
-            <button onClick={onCloseClickHandler} className={styles.closeBtn}>
-              X
-            </button>
             <PhotoSlider
               photos={photos}
               startIndex={startIndex}

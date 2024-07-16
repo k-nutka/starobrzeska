@@ -2,7 +2,7 @@ import styles from "./PhotoSlider.module.css";
 import { Slide } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css";
 
-export function PhotoSlider({ photos, startIndex }) {
+export function PhotoSlider({ photos, startIndex, setShowSlider }) {
   const images = photos;
 
   const properties = {
@@ -14,8 +14,15 @@ export function PhotoSlider({ photos, startIndex }) {
     defaultIndex: startIndex,
   };
 
+  const onCloseClickHandler = () => {
+    setShowSlider(false);
+  };
+
   return (
     <div className={styles.slideContainer}>
+      <button onClick={onCloseClickHandler} className={styles.closeBtn}>
+        X
+      </button>
       <div className={styles.Slide}>
         <Slide {...properties}>
           {images.map((each, index) => (
