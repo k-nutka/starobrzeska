@@ -16,6 +16,7 @@ import { FloorPlanSecond } from "./components/FloorPlan/FloorPlanSecond.jsx";
 import { FloorPlanThird } from "./components/FloorPlan/FloorPlanThird.jsx";
 import { Apartment } from "./views/Apartment/Apartment.jsx";
 import { apartmentLoader } from "./api/apartmentLoader.js";
+import { PrivacyPolicy } from "./views/PrivacyPolicy/PrivacyPolicy.jsx";
 
 const router = createBrowserRouter([
   {
@@ -63,6 +64,10 @@ const router = createBrowserRouter([
         path: "/wybierz-mieszkanie/mieszkanie/:apartmentId",
         element: <Apartment />,
         loader: apartmentLoader,
+      },
+      {
+        path: "/polityka-prywatnosci",
+        element: <PrivacyPolicy />,
       },
     ],
   },

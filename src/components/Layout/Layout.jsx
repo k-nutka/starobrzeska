@@ -5,6 +5,7 @@ import { MainContent } from "../MainContent/MainContent";
 
 import { NavBar } from "../NavBar/NavBar";
 import { TopBar } from "../TopBar/TopBar";
+import CookieConsent from "../CookieConsent/CookieConsent";
 
 export function Layout() {
   return (
@@ -16,6 +17,7 @@ export function Layout() {
         </TopBar>
         <Outlet />
       </MainContent>
+      <CookieConsent />
 
       <Footer />
     </>
