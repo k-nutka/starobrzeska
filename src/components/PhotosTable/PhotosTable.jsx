@@ -30,17 +30,13 @@ export function PhotosTable({ photos }) {
           );
         })}
       </div>
-      <div>
-        {showSlider && (
-          <div>
-            <PhotoSlider
-              photos={photos}
-              startIndex={startIndex}
-              setShowSlider={setShowSlider}
-            />
-          </div>
-        )}
-      </div>
+      {showSlider && (
+        <PhotoSlider
+          photos={photos}
+          startIndex={startIndex}
+          setShowSlider={setShowSlider}
+        />
+      )}
     </>
   );
 }

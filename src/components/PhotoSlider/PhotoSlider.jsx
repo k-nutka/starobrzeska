@@ -28,11 +28,13 @@ export function PhotoSlider({ photos, startIndex, setShowSlider }) {
           {images.map((each, index) => (
             <div key={index} className={styles.eachStyle}>
               <div className={styles.imageContainer}>
-                <img
-                  className={styles.imagePhoto}
-                  src={each}
-                  alt={`Slide ${index + 1}`}
-                />
+                <div className={styles.innerImgContainer}>
+                  <img
+                    className={styles.imagePhoto}
+                    src={each}
+                    alt={`Slide ${index + 1}`}
+                  />
+                </div>
               </div>
             </div>
           ))}
