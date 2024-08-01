@@ -12,6 +12,7 @@ export function PhotoSlider({ photos, startIndex, setShowSlider }) {
     indicators: true, // pokazuje wskaźniki slajdów
     arrows: true, // pokazuje strzałki nawigacyjne
     defaultIndex: startIndex,
+    autoPlay: false,
   };
 
   const onCloseClickHandler = () => {

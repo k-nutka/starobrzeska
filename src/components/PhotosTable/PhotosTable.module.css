@@ -12,6 +12,7 @@
 }
 .photoStyle {
   width: 45%;
+  height: 300px;
   margin: 5px;
   cursor: pointer;
 }
