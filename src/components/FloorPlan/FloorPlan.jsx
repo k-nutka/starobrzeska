@@ -1,7 +1,7 @@
 import { useRef, useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import styles from "./FloorPlan.module.css";
-import PARTER from "/parter.jpg"; // Upewnij się, że ścieżka jest poprawna
+import PARTER from "/parter.jpg";
 
 export function FloorPlan() {
   const svgRef = useRef(null);
