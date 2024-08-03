@@ -39,7 +39,6 @@ export function ContactForm() {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
-            "API-Key": "b7e1f4a3-95cd-4892-8682-9524f9603fe5",
           },
           body: JSON.stringify(dto),
         });
