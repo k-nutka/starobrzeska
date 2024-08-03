@@ -35,7 +35,7 @@ export function ContactForm() {
       };
 
       try {
-        const response = await fetch("http://api.starobrzeskabrzeg.pl", {
+        const response = await fetch("https://api.starobrzeskabrzeg.pl", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
