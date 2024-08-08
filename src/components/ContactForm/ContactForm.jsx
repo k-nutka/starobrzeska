@@ -35,7 +35,7 @@ export function ContactForm() {
       };
 
       try {
-        const response = await fetch("http://api.projectpartner.pl", {
+        const response = await fetch("https://api.projectpartner.pl", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
