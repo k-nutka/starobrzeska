@@ -31,7 +31,7 @@ export function ContactForm() {
     if (email && emailMessage) {
       const dto = {
         email: email,
-        emialMessage: emailMessage,
+        emailMessage: emailMessage,
       };
 
       try {
