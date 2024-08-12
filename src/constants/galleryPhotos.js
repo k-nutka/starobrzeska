@@ -16,6 +16,7 @@ export const INSIDEPHOTOS = [
   "/inside-3.jpg",
   "/inside-4.jpg",
   "/inside-5.jpg",
+  "/inside-6.jpg",
 ];
 export const SLIDER = [
   "/Image8.png",
