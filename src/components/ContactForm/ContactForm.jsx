@@ -90,7 +90,8 @@ export function ContactForm() {
           ></textarea>
         </div>
         <ReCAPTCHA
-          sitekey="6Lfu5yQqAAAAAC01RqOvcMUYiuJd4eW3nQrF6GdD"
+          sitekey="6Ley6iQqAAAAAADKEts9Oal3-HDkXYB6TZ5dAd2x
+"
           onChange={handleCaptchaChange}
         />
         <p className={styles.errorMessage}>{message}</p>
