@@ -5,7 +5,7 @@
 }
 .gallery_block {
   width: 50%;
-  height: 300px;
+  height: 400px;
   display: flex;
   flex-direction: column;
   justify-content: center;
