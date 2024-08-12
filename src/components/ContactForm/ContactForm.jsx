@@ -57,11 +57,13 @@ export function ContactForm() {
         const result = await response.json();
         if (result.ok) {
           setFormMessage("Wiadomość została wysłana");
+          setMessage("Wiadomość została wysłana");
         } else {
           setFormMessage(`Błąd: ${result.message}`);
         }
       } catch (error) {
         setFormMessage("Błąd podczas wysyłania wiadomości");
+        setMessage("Błąd podczas wysyłania wiadomości");
       } finally {
         setIsSubmitting(false);
       }
