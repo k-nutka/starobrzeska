@@ -23,18 +23,13 @@ export function Footer() {
         </div>
         <div className={styles.footerContact}>
           <p>Skontaktuj się z nami</p>
-          <p>
-            <a className={styles.footerLink} href="tel:777777778">
-              {" "}
-              +48 777 777 777
-            </a>
-          </p>
+
           <p>
             <a
               className={styles.footerLink}
-              href="mailto:starobrzeska@kontakt.pl"
+              href="mailto:biuro@starobrzeskabrzeg.pl"
             >
-              starobrzeska@kontakt.pl
+              biuro@starobrzeskabrzeg.pl
             </a>
           </p>
         </div>
