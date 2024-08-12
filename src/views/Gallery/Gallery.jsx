@@ -16,7 +16,7 @@ export function Gallery() {
         </div>
         <div className={styles.gallery_block}>
           <Link to={"/galeria/wewnatrz"} className={styles.gallery_link}>
-            <img className={styles.gallery_photo} src="/inside-1.jpg"></img>
+            <img className={styles.gallery_photo} src="/inside-2.jpg"></img>
           </Link>
         </div>
       </div>
