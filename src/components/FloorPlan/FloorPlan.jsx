@@ -75,12 +75,12 @@ export function FloorPlan() {
           />
           <path
             className={styles.buildingArea}
-            onClick={() => handleAreaClick("m-010")}
+            onClick={() => handleAreaClick("m-10")}
             d="M1168,532 L1431,532 L1441,887 L1175,885 Z"
           />
           <path
             className={styles.buildingArea}
-            onClick={() => handleAreaClick("m-011")}
+            onClick={() => handleAreaClick("m-11")}
             d="M924,534 L1168,534 L1176,890 L924,890 Z"
           />
         </svg>
