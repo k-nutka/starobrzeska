@@ -1,11 +1,17 @@
 import { useState } from "react";
 import styles from "./ContactForm.module.css";
 import validator from "validator";
+import ReCAPTCHA from "react-google-recaptcha";
 
 export function ContactForm() {
   const [message, setMessage] = useState("");
   const [formMessage, setFormMessage] = useState("");
   const [isSubmitting, setIsSubmitting] = useState("");
+  const [captchaValue, setCaptchaValue] = useState(null);
+
+  const handleCaptchaChange = (value) => {
+    setCaptchaValue(value);
+  };
 
   // const apiKey = process.env.REACT_APP_EMAIL_API_KEY;
 
@@ -27,11 +33,16 @@ export function ContactForm() {
     const formData = new FormData(e.target);
     const email = formData.get("email");
     const emailMessage = formData.get("emailMessage");
+    if (!captchaValue) {
+      alert("Uzupełnij CAPTCHA");
+      return;
+    }
 
     if (email && emailMessage) {
       const dto = {
         email: email,
         emailMessage: emailMessage,
+        captcha: captchaValue,
       };
 
       try {
@@ -61,24 +72,6 @@ export function ContactForm() {
     <div className={styles.contactFormDiv}>
       <form className={styles.contactForm} onSubmit={handleSubmit}>
         <div className={styles.contactForm_label}>
-          <label htmlFor="name">Imię</label>
-          <input
-            className={styles.contactForm_input}
-            required
-            type="text"
-            name="name"
-          ></input>
-        </div>
-        <div className={styles.contactForm_label}>
-          <label htmlFor="surname">Nazwisko</label>
-          <input
-            className={styles.contactForm_input}
-            required
-            type="text"
-            name="surnname"
-          ></input>
-        </div>
-        <div className={styles.contactForm_label}>
           <label htmlFor="email">Adres e-mail</label>
           <input
             className={styles.contactForm_input}
@@ -96,6 +89,10 @@ export function ContactForm() {
             className={styles.contactForm_textarea}
           ></textarea>
         </div>
+        <ReCAPTCHA
+          sitekey="6Lfu5yQqAAAAAC01RqOvcMUYiuJd4eW3nQrF6GdD"
+          onChange={handleCaptchaChange}
+        />
         <p className={styles.errorMessage}>{message}</p>
         <div className={styles.btn_container}>
           <button
