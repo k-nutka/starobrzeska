@@ -25,11 +25,11 @@
 }
 
 .reserved:hover {
-  fill: yellow; 
+  fill: #FFA50080; 
 }
 
 .sold:hover {
-  fill: red; 
+  fill: #FF000080; 
 }
 
 
