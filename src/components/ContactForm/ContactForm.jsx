@@ -53,6 +53,7 @@ export function ContactForm() {
         });
 
         const result = await response.json();
+        console.log(result);
         if (result.ok) {
           setFormMessage("Wiadomość została wysłana");
           setMessage("Wiadomość została wysłana");
