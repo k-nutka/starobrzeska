@@ -2,6 +2,8 @@ import { useRef, useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import styles from "./FloorPlan.module.css";
 import FLOOR from "/floor.jpg";
+import { getAparmentStatus } from "../../api/apartmentService";
+
 
 export function FloorPlanThird() {
   const svgRef = useRef(null);
