@@ -13,8 +13,6 @@ export function ContactForm() {
     setCaptchaValue(value);
   };
 
-  // const apiKey = process.env.REACT_APP_EMAIL_API_KEY;
-
   const validateEmail = (e) => {
     e.preventDefault();
     const email = e.target.value;
