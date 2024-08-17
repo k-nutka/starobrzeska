@@ -20,9 +20,19 @@
   transition: fill 0.3s ease;
 }
 
-.buildingArea:hover {
+.free:hover {
   fill: #0280908e;
 }
+
+.reserved:hover {
+  fill: yellow; 
+}
+
+.sold:hover {
+  fill: red; 
+}
+
+
 @media only screen and (max-width: 575px) {
   .buildingContainer {
     margin-top: 50px;
