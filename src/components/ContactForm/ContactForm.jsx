@@ -53,10 +53,14 @@ export function ContactForm() {
         });
 
         const result = await response.json();
-        console.log(result);
-        if (result.ok) {
+
+        if (result.status === 'success') {
           setFormMessage("Wiadomość została wysłana");
           setMessage("Wiadomość została wysłana");
+
+          // form reset 
+          e.target.reset();
+          setCaptchaValue(null); // Zresetowanie wartości CAPTCHA
         } else {
           setFormMessage(`Błąd: ${result.message}`);
         }
