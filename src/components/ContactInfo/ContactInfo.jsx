@@ -13,8 +13,8 @@ export function ContactInfo() {
         <img src={EMAIL_ICON} className={styles.contactInfo_icon} />
         <p className={styles.contactInfoText}>
           {" "}
-          <a href="mailto:kontakt@starobrzeskabrzeg.pl">
-            kontakt@starobrzeskabrzeg.pl
+          <a href="mailto:sprzedaz@starobrzeskabrzeg.pl">
+            sprzedaz@starobrzeskabrzeg.pl
           </a>
         </p>
       </div>

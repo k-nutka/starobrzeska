@@ -27,9 +27,9 @@ export function Footer() {
           <p>
             <a
               className={styles.footerLink}
-              href="mailto:kontakt@starobrzeskabrzeg.pl"
+              href="mailto:sprzedaz@starobrzeskabrzeg.pl"
             >
-              kontakt@starobrzeskabrzeg.pl
+              sprzedaz@starobrzeskabrzeg.pl
             </a>
           </p>
         </div>
